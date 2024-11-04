@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1730731652,,"wq!"
+|2,0,1730733718,,"wq!"
 :!WQ!
 |2,0,1730731646,,"!WQ!"
 :%d
@@ -147,30 +147,38 @@
 |<"        image: <docker-user-name>/go-web-app","        ports:","        - containerPort: 8080"
 
 # File marks:
-'0  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
-|4,48,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+'0  8  62  ~/.git/MERGE_MSG
+|4,48,8,62,1730733718,"~/.git/MERGE_MSG"
 '1  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
-|4,49,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
-'2  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,50,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
-'3  11  0  ~/helm/debug-pod.yaml
-|4,51,11,0,1730725759,"~/helm/debug-pod.yaml"
-'4  63  0  ~/helm/output.yaml
-|4,52,63,0,1730723650,"~/helm/output.yaml"
-'5  1  0  /etc/hosts
-|4,53,1,0,1730719703,"/etc/hosts"
-'6  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,54,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
-'7  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,55,21,15,1730708278,"~/helm/go-web-app-chart/templates/deployment.yaml"
+|4,49,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+'2  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,50,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+'3  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,51,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
+'4  11  0  ~/helm/debug-pod.yaml
+|4,52,11,0,1730725759,"~/helm/debug-pod.yaml"
+'5  63  0  ~/helm/output.yaml
+|4,53,63,0,1730723650,"~/helm/output.yaml"
+'6  1  0  /etc/hosts
+|4,54,1,0,1730719703,"/etc/hosts"
+'7  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,55,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
 '8  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
 |4,56,21,15,1730708278,"~/helm/go-web-app-chart/templates/deployment.yaml"
-'9  1  24  ~/helm/go-web-app-chart/values.yaml
-|4,57,1,24,1730707896,"~/helm/go-web-app-chart/values.yaml"
+'9  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,57,21,15,1730708278,"~/helm/go-web-app-chart/templates/deployment.yaml"
 
 # Jumplist (newest first):
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
 -'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
 |4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
 -'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
 |4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
 -'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
@@ -181,6 +189,22 @@
 |4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
 -'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
 |4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
+-'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
 -'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
 |4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
 -'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
@@ -205,6 +229,38 @@
 |4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
 -'  11  0  ~/helm/debug-pod.yaml
 |4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  11  0  ~/helm/debug-pod.yaml
+|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
+-'  1  0  ~/helm/debug-pod.yaml
+|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
 -'  1  0  ~/helm/debug-pod.yaml
 |4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
 -'  1  0  ~/helm/debug-pod.yaml
@@ -253,6 +309,38 @@
 |4,39,63,0,1730723650,"~/helm/output.yaml"
 -'  63  0  ~/helm/output.yaml
 |4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
+-'  63  0  ~/helm/output.yaml
+|4,39,63,0,1730723650,"~/helm/output.yaml"
 -'  1  0  ~/helm/output.yaml
 |4,39,1,0,1730723641,"~/helm/output.yaml"
 -'  1  0  ~/helm/output.yaml
@@ -281,96 +369,16 @@
 |4,39,1,0,1730723641,"~/helm/output.yaml"
 -'  1  0  ~/helm/output.yaml
 |4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  1  0  /etc/hosts
-|4,39,1,0,1730719703,"/etc/hosts"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
--'  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,39,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/MERGE_MSG
+	*	1730733717	0
+	"	8	62
+	^	8	63
+	.	8	62
+	+	6	13
+	+	8	62
 
 > ~/GO-WEB-APP/.github/workflows/ci.yaml
 	*	1730731648	0
