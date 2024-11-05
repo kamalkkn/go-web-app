@@ -2,7 +2,6 @@
 
 name: CI/CD
 
-# Exclude the workflow to run on changes to the helm chart
 on:
   push:
     branches:
@@ -26,12 +25,12 @@ jobs:
         go-version: 1.22
 
     - name: Build
-      run: go build -o go-web-app
-      working-directory: ./go-web-app  # Specify the working directory for the Go files
+      working-directory: ./go-web-app  # Point to the correct directory
+      run: go build -o go-web-app main.go  # Specify main.go or the entry file
 
     - name: Test
+      working-directory: ./go-web-app  # Specify the working directory for tests
       run: go test ./...
-      working-directory: ./go-web-app  # Specify the working directory for the tests
 
   code-quality:
     runs-on: ubuntu-latest
@@ -44,7 +43,7 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
         version: v1.56.2
-      working-directory: ./go-web-app  # Specify the working directory for golangci-lint
+      working-directory: ./go-web-app
   
   push:
     runs-on: ubuntu-latest
