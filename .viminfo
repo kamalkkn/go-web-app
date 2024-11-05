@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1730733718,,"wq!"
+|2,0,1730787127,,"wq!"
 :!WQ!
 |2,0,1730731646,,"!WQ!"
 :%d
@@ -147,30 +147,146 @@
 |<"        image: <docker-user-name>/go-web-app","        ports:","        - containerPort: 8080"
 
 # File marks:
-'0  8  62  ~/.git/MERGE_MSG
-|4,48,8,62,1730733718,"~/.git/MERGE_MSG"
-'1  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
-|4,49,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
-'2  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
-|4,50,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
-'3  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,51,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
-'4  11  0  ~/helm/debug-pod.yaml
-|4,52,11,0,1730725759,"~/helm/debug-pod.yaml"
-'5  63  0  ~/helm/output.yaml
-|4,53,63,0,1730723650,"~/helm/output.yaml"
-'6  1  0  /etc/hosts
-|4,54,1,0,1730719703,"/etc/hosts"
-'7  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,55,11,9,1730708805,"~/helm/go-web-app-chart/values.yaml"
-'8  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,56,21,15,1730708278,"~/helm/go-web-app-chart/templates/deployment.yaml"
-'9  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,57,21,15,1730708278,"~/helm/go-web-app-chart/templates/deployment.yaml"
+'0  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,48,96,0,1730787127,"~/go-web-app/.github/workflows/ci.yaml"
+'1  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,49,96,0,1730787038,"~/go-web-app/.github/workflows/ci.yaml"
+'2  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,50,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
+'3  3  10  ~/.github/workflows/cicd.yaml
+|4,51,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+'4  8  62  ~/.git/MERGE_MSG
+|4,52,8,62,1730733718,"~/.git/MERGE_MSG"
+'5  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,53,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+'6  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,54,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+'7  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
+|4,55,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
+'8  11  0  ~/helm/debug-pod.yaml
+|4,56,11,0,1730725759,"~/helm/debug-pod.yaml"
+'9  63  0  ~/helm/output.yaml
+|4,57,63,0,1730723650,"~/helm/output.yaml"
 
 # Jumplist (newest first):
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730787127,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730787038,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730787006,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730787006,"~/go-web-app/.github/workflows/ci.yaml"
+-'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  1  0  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,1,0,1730786651,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  1  0  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,1,0,1730786651,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  1  0  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,1,0,1730786651,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  1  0  ~/go-web-app/k8s/manifests/deployment.yaml
+|4,39,1,0,1730786651,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  3  10  ~/.github/workflows/cicd.yaml
+|4,39,3,10,1730786596,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
+-'  1  0  ~/.github/workflows/cicd.yaml
+|4,39,1,0,1730786495,"~/.github/workflows/cicd.yaml"
 -'  8  62  ~/.git/MERGE_MSG
 |4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  8  62  ~/.git/MERGE_MSG
+|4,39,8,62,1730733718,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1730733596,"~/.git/MERGE_MSG"
 -'  1  0  ~/.git/MERGE_MSG
 |4,39,1,0,1730733596,"~/.git/MERGE_MSG"
 -'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
@@ -178,199 +294,107 @@
 -'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
 |4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
 -'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731652,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
 |4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
 -'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
 |4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  20  44  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,20,44,1730726324,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  21  15  ~/helm/go-web-app-chart/templates/deployment.yaml
-|4,39,21,15,1730726257,"~/helm/go-web-app-chart/templates/deployment.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  11  0  ~/helm/debug-pod.yaml
-|4,39,11,0,1730725759,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  1  0  ~/helm/debug-pod.yaml
-|4,39,1,0,1730725743,"~/helm/debug-pod.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  63  0  ~/helm/output.yaml
-|4,39,63,0,1730723650,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
--'  1  0  ~/helm/output.yaml
-|4,39,1,0,1730723641,"~/helm/output.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
+-'  1  0  ~/GO-WEB-APP/.github/workflows/ci.yaml
+|4,39,1,0,1730731053,"~/GO-WEB-APP/.github/workflows/ci.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/go-web-app/.github/workflows/ci.yaml
+	*	1730787126	0
+	"	96	0
+	^	96	0
+	.	91	46
+	+	95	0
+	+	90	64
+	+	91	46
+
+> ~/go-web-app/k8s/manifests/deployment.yaml
+	*	1730786706	0
+	"	20	65
+	^	20	66
+	.	20	65
+	+	20	65
+
+> ~/.github/workflows/cicd.yaml
+	*	1730786595	0
+	"	3	10
+	^	3	11
+	.	91	46
+	+	90	64
+	+	91	46
 
 > ~/.git/MERGE_MSG
 	*	1730733717	0
