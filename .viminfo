@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1730829750,,"wq!"
+|2,0,1730830676,,"wq!"
 :%d
 |2,0,1730828535,,"%d"
 :!WQ!
@@ -413,62 +413,102 @@
 |3,0,9,1,1,0,1730698694,"::1         localhost6 localhost6.localdomain6"
 
 # File marks:
-'0  67  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,48,67,0,1730829750,"~/go-web-app/.github/workflows/ci.yaml"
-'1  108  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,49,108,0,1730828544,"~/go-web-app/.github/workflows/ci.yaml"
+'0  6  17  ~/Dockerfile
+|4,48,6,17,1730830676,"~/Dockerfile"
+'1  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,49,67,0,1730829750,"~/go-web-app/.github/workflows/ci.yaml"
 '2  108  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,50,108,0,1730828544,"~/go-web-app/.github/workflows/ci.yaml"
-'3  1  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,51,1,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
-'4  96  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,52,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
-'5  1  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,53,1,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
-'6  96  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,54,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
-'7  1  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,55,1,0,1730827393,"~/go-web-app/.github/workflows/ci.yaml"
+'3  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,51,108,0,1730828544,"~/go-web-app/.github/workflows/ci.yaml"
+'4  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,52,1,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
+'5  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,53,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
+'6  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,54,1,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
+'7  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,55,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
 '8  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,56,1,0,1730827393,"~/go-web-app/.github/workflows/ci.yaml"
 '9  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,57,1,0,1730827393,"~/go-web-app/.github/workflows/ci.yaml"
 
 # Jumplist (newest first):
+-'  6  17  ~/Dockerfile
+|4,39,6,17,1730830676,"~/Dockerfile"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730829750,"~/go-web-app/.github/workflows/ci.yaml"
 -'  67  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,67,0,1730829750,"~/go-web-app/.github/workflows/ci.yaml"
 -'  108  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,108,0,1730829680,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730829680,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730828544,"~/go-web-app/.github/workflows/ci.yaml"
 -'  108  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,108,0,1730828544,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730828535,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730828535,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730828535,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730828535,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
 -'  96  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
 -'  96  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,96,0,1730827800,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730827786,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730827786,"~/go-web-app/.github/workflows/ci.yaml"
+-'  97  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,97,0,1730827393,"~/go-web-app/.github/workflows/ci.yaml"
+-'  97  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,97,0,1730827393,"~/go-web-app/.github/workflows/ci.yaml"
 -'  97  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,97,0,1730827393,"~/go-web-app/.github/workflows/ci.yaml"
 -'  97  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,97,0,1730827393,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730827373,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730827373,"~/go-web-app/.github/workflows/ci.yaml"
 -'  96  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,96,0,1730826720,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730826720,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730826711,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730826711,"~/go-web-app/.github/workflows/ci.yaml"
 -'  88  8  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,88,8,1730803589,"~/go-web-app/.github/workflows/ci.yaml"
 -'  88  8  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,88,8,1730803589,"~/go-web-app/.github/workflows/ci.yaml"
+-'  88  8  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,88,8,1730803589,"~/go-web-app/.github/workflows/ci.yaml"
+-'  88  8  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,88,8,1730803589,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730798019,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730798019,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730798019,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730798019,"~/go-web-app/.github/workflows/ci.yaml"
+-'  49  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,49,0,1730794690,"~/go-web-app/.github/workflows/ci.yaml"
+-'  49  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,49,0,1730794690,"~/go-web-app/.github/workflows/ci.yaml"
 -'  49  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,49,0,1730794690,"~/go-web-app/.github/workflows/ci.yaml"
 -'  49  0  ~/go-web-app/.github/workflows/ci.yaml
@@ -476,7 +516,13 @@
 -'  97  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,97,0,1730794643,"~/go-web-app/.github/workflows/ci.yaml"
 -'  97  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,97,0,1730794643,"~/go-web-app/.github/workflows/ci.yaml"
+-'  97  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,97,0,1730794041,"~/go-web-app/.github/workflows/ci.yaml"
+-'  97  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,97,0,1730794041,"~/go-web-app/.github/workflows/ci.yaml"
+-'  97  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,97,0,1730793526,"~/go-web-app/.github/workflows/ci.yaml"
 -'  97  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,97,0,1730793526,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
@@ -485,6 +531,18 @@
 |4,39,1,0,1730793511,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730793511,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730793511,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730793511,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730793511,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730787127,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730787127,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730787127,"~/go-web-app/.github/workflows/ci.yaml"
 -'  96  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,96,0,1730787127,"~/go-web-app/.github/workflows/ci.yaml"
 -'  96  0  ~/go-web-app/.github/workflows/ci.yaml
@@ -493,74 +551,16 @@
 |4,39,96,0,1730787127,"~/go-web-app/.github/workflows/ci.yaml"
 -'  96  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,96,0,1730787038,"~/go-web-app/.github/workflows/ci.yaml"
+-'  96  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,96,0,1730787038,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730787006,"~/go-web-app/.github/workflows/ci.yaml"
 -'  1  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,1,0,1730787006,"~/go-web-app/.github/workflows/ci.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
--'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
-|4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730787006,"~/go-web-app/.github/workflows/ci.yaml"
+-'  1  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,1,0,1730787006,"~/go-web-app/.github/workflows/ci.yaml"
 -'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
 |4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
 -'  20  65  ~/go-web-app/k8s/manifests/deployment.yaml
@@ -637,6 +637,13 @@
 |4,39,20,65,1730786708,"~/go-web-app/k8s/manifests/deployment.yaml"
 
 # History of marks within files (newest to oldest):
+
+> ~/Dockerfile
+	*	1730830675	0
+	"	6	17
+	^	6	18
+	.	6	17
+	+	6	17
 
 > ~/go-web-app/.github/workflows/ci.yaml
 	*	1730829749	0
@@ -746,10 +753,3 @@
 	.	22	33
 	+	1	73
 	+	22	33
-
-> ~/Dockerfile
-	*	1730631984	0
-	"	6	17
-	^	6	18
-	.	6	17
-	+	6	17
