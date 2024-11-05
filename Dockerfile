@@ -26,10 +26,10 @@ RUN go build -o main .
 FROM gcr.io/distroless/base
 
 # Copy the binary from the previous stage
-COPY --from=base /app/main .
+COPY --from=golang:1.22.7 /app/main .
 
 # Copy the static files from the previous stage
-COPY --from=base /app/static ./static
+COPY --from=golang:1.22.7 /app/static ./static
 
 # Expose the port on which the application will run
 EXPOSE 8080
