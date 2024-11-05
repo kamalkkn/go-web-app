@@ -1,15 +1,11 @@
-# Containerize the go application that we have created
-# This is the Dockerfile that we will use to build the image
-# and run the container
-
-# Start with a base image
-FROM golang:1.22.7
+# First stage: Build the Go application
+FROM golang:1.22.7 AS builder
 
 # Set the working directory inside the container
 WORKDIR /app
 
 # Copy the go.mod and go.sum files to the working directory
-COPY go.mod ./
+COPY go.mod go.sum ./
 
 # Download all the dependencies
 RUN go mod download
@@ -21,18 +17,18 @@ COPY . .
 RUN go build -o main .
 
 #######################################################
-# Reduce the image size using multi-stage builds
-# We will use a distroless image to run the application
+# Second stage: Create a smaller image using distroless
 FROM gcr.io/distroless/base
 
 # Copy the binary from the previous stage
-COPY --from=golang:1.22.7 /app/main .
+COPY --from=builder /app/main .
 
-# Copy the static files from the previous stage
-COPY --from=golang:1.22.7 /app/static ./static
+# If you have static files, ensure they are copied from the builder stage
+COPY --from=builder /app/static ./static
 
 # Expose the port on which the application will run
 EXPOSE 8080
 
 # Command to run the application
 CMD ["./main"]
+
