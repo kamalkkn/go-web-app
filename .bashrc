@@ -20,3 +20,4 @@ export PATH
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+export PATH=$PATH:$(go env GOPATH)/bin

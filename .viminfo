@@ -12,7 +12,9 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1730865194,,"wq!"
+|2,0,1730875999,,"wq!"
+:q
+|2,0,1730875909,,"q"
 :%d
 |2,0,1730832211,,"%d"
 :!WQ!
@@ -28,6 +30,21 @@
 
 # Registers:
 ""1	LINE	0
+	module github.com/kamalakannan72/go-web-app-devops
+|3,1,1,1,1,0,1730875993,"module github.com/kamalakannan72/go-web-app-devops"
+"2	LINE	0
+	>>>>>>> 4892417 (feat: add initial files for devops)
+|3,0,2,1,1,0,1730875991,">>>>>>> 4892417 (feat: add initial files for devops)"
+"3	LINE	0
+	
+|3,0,3,1,1,0,1730875990,""
+"4	LINE	0
+	=======
+|3,0,4,1,1,0,1730875988,"======="
+"5	LINE	0
+	<<<<<<< HEAD
+|3,0,5,1,1,0,1730875984,"<<<<<<< HEAD"
+"6	LINE	0
 	# Containerize the go application that we have created
 	# This is the Dockerfile that we will use to build the image
 	# and run the container
@@ -66,10 +83,10 @@
 	
 	# Command to run the application
 	CMD ["./main"]
-|3,1,1,1,38,0,1730832211,"# Containerize the go application that we have created","# This is the Dockerfile that we will use to build the image","# and run the container","","# Start with a base image","FROM golang:1.22.7","","# Set the working directory inside the container","WORKDIR /app","","# Copy the go.mod and go.sum files to the working directory","COPY go.mod ./","","# Download all the dependencies","RUN go mod download","",>49
+|3,0,6,1,38,0,1730832211,"# Containerize the go application that we have created","# This is the Dockerfile that we will use to build the image","# and run the container","","# Start with a base image","FROM golang:1.22.7","","# Set the working directory inside the container","WORKDIR /app","","# Copy the go.mod and go.sum files to the working directory","COPY go.mod ./","","# Download all the dependencies","RUN go mod download","",>49
 |<"# Copy the source code to the working directory","COPY . .","","# Build the application","RUN go build -o main .","","#######################################################","# Reduce the image size using multi-stage builds","# We will use a distroless image to run the application","FROM gcr.io/distroless/base","","# Copy the binary from the previous stage","COPY --from=golang:1.22.7 /app/main .","","# Copy the static files from the previous stage",>48
 |<"COPY --from=golang:1.22.7 /app/static ./static","","# Expose the port on which the application will run","EXPOSE 8080","","# Command to run the application","CMD [\"./main\"]"
-"2	LINE	0
+"7	LINE	0
 	# CICD using GitHub actions
 	
 	name: CI/CD
@@ -120,10 +137,10 @@
 	  push:
 	    runs-on: ubuntu-latest
 	
-|3,0,2,1,50,0,1730828535,"# CICD using GitHub actions","","name: CI/CD","","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22","      uses: actions/setup-go@v2","      with:","        go-version: 1.22","",>19
+|3,0,7,1,50,0,1730828535,"# CICD using GitHub actions","","name: CI/CD","","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22","      uses: actions/setup-go@v2","      with:","        go-version: 1.22","",>19
 |<"    - name: Build","      working-directory: ./go-web-app  # Point to the correct directory","      run: go build -o go-web-app main.go  # Specify main.go or the entry file","","    - name: Test","      working-directory: ./go-web-app  # Specify the working directory for tests","      run: go test ./...","","  code-quality:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Run golangci-lint",>46
 |<"      uses: golangci/golangci-lint-action@v6","      with:","        version: v1.56.2","      working-directory: ./go-web-app","  ","  push:","    runs-on: ubuntu-latest",""
-"3	LINE	0
+"8	LINE	0
 	# CICD using GitHub actions
 	
 	name: CI/CD
@@ -174,314 +191,135 @@
 	  
 	  push:
 	    runs-on: ubuntu-latest
-|3,0,3,1,50,0,1730827786,"# CICD using GitHub actions","","name: CI/CD","","# Exclude the workflow to run on changes to the helm chart","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22",>33
+|3,0,8,1,50,0,1730827786,"# CICD using GitHub actions","","name: CI/CD","","# Exclude the workflow to run on changes to the helm chart","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22",>33
 |<"      uses: actions/setup-go@v2","      with:","        go-version: 1.22","","    - name: Build","      run: go build -o go-web-app","      working-directory: ./go-web-app  # Specify the working directory for the Go files","","    - name: Test","      run: go test ./...","      working-directory: ./go-web-app  # Specify the working directory for the tests","","  code-quality:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository",>33
 |<"      uses: actions/checkout@v4","","    - name: Run golangci-lint","      uses: golangci/golangci-lint-action@v6","      with:","        version: v1.56.2","      working-directory: ./go-web-app  # Specify the working directory for golangci-lint","  ","  push:","    runs-on: ubuntu-latest"
-"4	LINE	0
-	# CICD using GitHub actions
-	
-	name: CI/CD
-	
-	# Exclude the workflow to run on changes to the helm chart
-	on:
-	  push:
-	    branches:
-	      - main
-	    paths-ignore:
-	      - 'helm/**'
-	      - 'k8s/**'
-	      - 'README.md'
-	
-	jobs:
-	  build:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Set up Go 1.22
-	      uses: actions/setup-go@v2
-	      with:
-	        go-version: 1.22
-	
-	    - name: Build
-	      run: go build -o go-web-app
-	      working-directory: ./go-web-app  # Specify the working directory for the Go files
-	
-	    - name: Test
-	      run: go test ./...
-	      working-directory: ./go-web-app  # Specify the working directory for the tests
-	
-	  code-quality:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Run golangci-lint
-	      uses: golangci/golangci-lint-action@v6
-	      with:
-	        version: v1.56.2
-	  
-	  push:
-	    runs-on: ubuntu-latest
-	
-|3,0,4,1,50,0,1730827373,"# CICD using GitHub actions","","name: CI/CD","","# Exclude the workflow to run on changes to the helm chart","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22",>33
-|<"      uses: actions/setup-go@v2","      with:","        go-version: 1.22","","    - name: Build","      run: go build -o go-web-app","      working-directory: ./go-web-app  # Specify the working directory for the Go files","","    - name: Test","      run: go test ./...","      working-directory: ./go-web-app  # Specify the working directory for the tests","","  code-quality:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository",>33
-|<"      uses: actions/checkout@v4","","    - name: Run golangci-lint","      uses: golangci/golangci-lint-action@v6","      with:","        version: v1.56.2","  ","  push:","    runs-on: ubuntu-latest",""
-"5	LINE	0
-	# CICD using GitHub actions
-	
-	name: CI/CD
-	
-	# Exclude the workflow to run on changes to the helm chart
-	on:
-	  push:
-	    branches:
-	      - main
-	    paths-ignore:
-	      - 'helm/**'
-	      - 'k8s/**'
-	      - 'README.md'
-	
-	jobs:
-	  build:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Set up Go 1.22
-	      uses: actions/setup-go@v2
-	      with:
-	        go-version: 1.22
-	
-	    - name: Build
-	      run: go build -o go-web-app
-	      working-directory: ./go-web-app  # Specify the working directory for the Go files
-	
-	    - name: Test
-	      run: go test ./...
-	      working-directory: ./go-web-app  # Specify the working directory for the tests
-	
-	  code-quality:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Run golangci-lint
-	      uses: golangci/golangci-lint-action@v6
-	      with:
-	        version: v1.56.2
-	  
-	  push:
-	    runs-on: ubuntu-latest
-	
-|3,0,5,1,50,0,1730826711,"# CICD using GitHub actions","","name: CI/CD","","# Exclude the workflow to run on changes to the helm chart","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22",>33
-|<"      uses: actions/setup-go@v2","      with:","        go-version: 1.22","","    - name: Build","      run: go build -o go-web-app","      working-directory: ./go-web-app  # Specify the working directory for the Go files","","    - name: Test","      run: go test ./...","      working-directory: ./go-web-app  # Specify the working directory for the tests","","  code-quality:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository",>33
-|<"      uses: actions/checkout@v4","","    - name: Run golangci-lint","      uses: golangci/golangci-lint-action@v6","      with:","        version: v1.56.2","  ","  push:","    runs-on: ubuntu-latest",""
-"6	LINE	0
-	# CICD using GitHub actions
-	
-	name: CI/CD
-	
-	# Exclude the workflow to run on changes to the helm chart
-	on:
-	  push:
-	    branches:
-	      - main
-	    paths-ignore:
-	      - 'helm/**'
-	      - 'k8s/**'
-	      - 'README.md'
-	
-	jobs:
-	
-	  build:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Set up Go 1.22
-	      uses: actions/setup-go@v2
-	      with:
-	        go-version: 1.22
-	
-	    - name: Build
-	      run: go build -o go-web-app
-	      working-directory: ./go-web-app  # Specify the working directory
-	
-	    - name: Test
-	      run: go test ./...
-	      working-directory: ./go-web-app  # Specify the working directory
-	
-	  code-quality:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Run golangci-lint
-	      uses: golangci/golangci-lint-action@v6
-	      with:
-	        version: v1.56.2
-	
-	  push:
-	    runs-on: ubuntu-latest
-|3,0,6,1,50,0,1730826639,"# CICD using GitHub actions","","name: CI/CD","","# Exclude the workflow to run on changes to the helm chart","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22",>33
-|<"      uses: actions/setup-go@v2","      with:","        go-version: 1.22","","    - name: Build","      run: go build -o go-web-app","      working-directory: ./go-web-app  # Specify the working directory","","    - name: Test","      run: go test ./...","      working-directory: ./go-web-app  # Specify the working directory","","  code-quality:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","",>31
-|<"    - name: Run golangci-lint","      uses: golangci/golangci-lint-action@v6","      with:","        version: v1.56.2","","  push:","    runs-on: ubuntu-latest"
-"7	LINE	0
-	# CICD using GitHub actions
-	
-	name: CI/CD
-	
-	# Exclude the workflow to run on changes to the helm chart
-	on:
-	  push:
-	    branches:
-	      - main
-	    paths-ignore:
-	      - 'helm/**'
-	      - 'k8s/**'
-	      - 'README.md'
-	
-	jobs:
-	
-	  build:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Set up Go 1.22
-	      uses: actions/setup-go@v2
-	      with:
-	        go-version: 1.22
-	
-	    - name: Build
-	      run: go build -o go-web-app
-	
-	    - name: Test
-	      run: go test ./...
-	
-	  code-quality:
-	    runs-on: ubuntu-latest
-	
-	    steps:
-	    - name: Checkout repository
-	      uses: actions/checkout@v4
-	
-	    - name: Run golangci-lint
-	      uses: golangci/golangci-lint-action@v6
-	      with:
-	        version: v1.56.2
-	
-	  push:
-	    runs-on: ubuntu-latest
-	
-	    needs: build
-|3,0,7,1,50,0,1730793511,"# CICD using GitHub actions","","name: CI/CD","","# Exclude the workflow to run on changes to the helm chart","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22",>33
-|<"      uses: actions/setup-go@v2","      with:","        go-version: 1.22","","    - name: Build","      run: go build -o go-web-app","","    - name: Test","      run: go test ./...","","  code-quality:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Run golangci-lint","      uses: golangci/golangci-lint-action@v6","      with:","        version: v1.56.2","","  push:","    runs-on: ubuntu-latest","",>18
-|<"    needs: build"
-"8	LINE	0
-	# Default values for go-web-app-chart.
-	# This is a YAML-formatted file.
-	# Declare variables to be passed into your templates.
-	
-	replicaCount: 1
-	
-	image:
-	  repository: nginx
-	  pullPolicy: IfNotPresent
-	  # Overrides the image tag whose default is the chart appVersion.
-	  tag: ""
-	
-	imagePullSecrets: []
-	nameOverride: ""
-	fullnameOverride: ""
-	
-	serviceAccount:
-	  # Specifies whether a service account should be created
-	  create: true
-	  # Annotations to add to the service account
-	  annotations: {}
-	  # The name of the service account to use.
-	  # If not set and create is true, a name is generated using the fullname template
-	  name: ""
-	
-	podAnnotations: {}
-	
-	podSecurityContext: {}
-	  # fsGroup: 2000
-	
-	securityContext: {}
-	  # capabilities:
-	  #   drop:
-	  #   - ALL
-	  # readOnlyRootFilesystem: true
-	  # runAsNonRoot: true
-	  # runAsUser: 1000
-	
-	service:
-	  type: ClusterIP
-	  port: 80
-	
-	ingress:
-	  enabled: false
-	  className: ""
-	  annotations: {}
-	    # kubernetes.io/ingress.class: nginx
-	    # kubernetes.io/tls-acme: "true"
-	  hosts:
-	    - host: chart-example.local
-|3,0,8,1,50,0,1730708421,"# Default values for go-web-app-chart.","# This is a YAML-formatted file.","# Declare variables to be passed into your templates.","","replicaCount: 1","","image:","  repository: nginx","  pullPolicy: IfNotPresent","  # Overrides the image tag whose default is the chart appVersion.","  tag: \"\"","","imagePullSecrets: []","nameOverride: \"\"","fullnameOverride: \"\"","","serviceAccount:",>59
-|<"  # Specifies whether a service account should be created","  create: true","  # Annotations to add to the service account","  annotations: {}","  # The name of the service account to use.","  # If not set and create is true, a name is generated using the fullname template","  name: \"\"","","podAnnotations: {}","","podSecurityContext: {}","  # fsGroup: 2000","","securityContext: {}","  # capabilities:","  #   drop:","  #   - ALL","  # readOnlyRootFilesystem: true",>24
-|<"  # runAsNonRoot: true","  # runAsUser: 1000","","service:","  type: ClusterIP","  port: 80","","ingress:","  enabled: false","  className: \"\"","  annotations: {}","    # kubernetes.io/ingress.class: nginx","    # kubernetes.io/tls-acme: \"true\"","  hosts:","    - host: chart-example.local"
 "9	LINE	0
+	# CICD using GitHub actions
 	
-|3,0,9,1,1,0,1730698694,""
+	name: CI/CD
+	
+	# Exclude the workflow to run on changes to the helm chart
+	on:
+	  push:
+	    branches:
+	      - main
+	    paths-ignore:
+	      - 'helm/**'
+	      - 'k8s/**'
+	      - 'README.md'
+	
+	jobs:
+	  build:
+	    runs-on: ubuntu-latest
+	
+	    steps:
+	    - name: Checkout repository
+	      uses: actions/checkout@v4
+	
+	    - name: Set up Go 1.22
+	      uses: actions/setup-go@v2
+	      with:
+	        go-version: 1.22
+	
+	    - name: Build
+	      run: go build -o go-web-app
+	      working-directory: ./go-web-app  # Specify the working directory for the Go files
+	
+	    - name: Test
+	      run: go test ./...
+	      working-directory: ./go-web-app  # Specify the working directory for the tests
+	
+	  code-quality:
+	    runs-on: ubuntu-latest
+	
+	    steps:
+	    - name: Checkout repository
+	      uses: actions/checkout@v4
+	
+	    - name: Run golangci-lint
+	      uses: golangci/golangci-lint-action@v6
+	      with:
+	        version: v1.56.2
+	  
+	  push:
+	    runs-on: ubuntu-latest
+	
+|3,0,9,1,50,0,1730827373,"# CICD using GitHub actions","","name: CI/CD","","# Exclude the workflow to run on changes to the helm chart","on:","  push:","    branches:","      - main","    paths-ignore:","      - 'helm/**'","      - 'k8s/**'","      - 'README.md'","","jobs:","  build:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository","      uses: actions/checkout@v4","","    - name: Set up Go 1.22",>33
+|<"      uses: actions/setup-go@v2","      with:","        go-version: 1.22","","    - name: Build","      run: go build -o go-web-app","      working-directory: ./go-web-app  # Specify the working directory for the Go files","","    - name: Test","      run: go test ./...","      working-directory: ./go-web-app  # Specify the working directory for the tests","","  code-quality:","    runs-on: ubuntu-latest","","    steps:","    - name: Checkout repository",>33
+|<"      uses: actions/checkout@v4","","    - name: Run golangci-lint","      uses: golangci/golangci-lint-action@v6","      with:","        version: v1.56.2","  ","  push:","    runs-on: ubuntu-latest",""
 
 # File marks:
-'0  95  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,48,95,0,1730865194,"~/go-web-app/.github/workflows/ci.yaml"
-'1  11  9  ~/helm/go-web-app-chart/values.yaml
-|4,49,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
-'2  93  28  ~/go-web-app/.github/workflows/ci.yaml
-|4,50,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
+'0  3  0  ~/go-web-app/go.mod
+|4,48,3,0,1730875999,"~/go-web-app/go.mod"
+'1  95  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,49,95,0,1730865194,"~/go-web-app/.github/workflows/ci.yaml"
+'2  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,50,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
 '3  93  28  ~/go-web-app/.github/workflows/ci.yaml
 |4,51,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
-'4  109  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,52,109,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+'4  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,52,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
 '5  109  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,53,109,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
-'6  108  0  ~/go-web-app/.github/workflows/ci.yaml
-|4,54,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+'6  109  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,54,109,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
 '7  108  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,55,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
-'8  8  12  ~/Dockerfile
-|4,56,8,12,1730832632,"~/Dockerfile"
-'9  34  0  ~/Dockerfile
-|4,57,34,0,1730832344,"~/Dockerfile"
+'8  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,56,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+'9  8  12  ~/Dockerfile
+|4,57,8,12,1730832632,"~/Dockerfile"
 
 # Jumplist (newest first):
+-'  3  0  ~/go-web-app/go.mod
+|4,39,3,0,1730875999,"~/go-web-app/go.mod"
+-'  1  0  ~/go-web-app/go.mod
+|4,39,1,0,1730875933,"~/go-web-app/go.mod"
 -'  95  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,95,0,1730865194,"~/go-web-app/.github/workflows/ci.yaml"
+-'  95  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,95,0,1730865194,"~/go-web-app/.github/workflows/ci.yaml"
+-'  95  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,95,0,1730865194,"~/go-web-app/.github/workflows/ci.yaml"
+-'  95  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,95,0,1730865194,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730865177,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730865177,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730865177,"~/go-web-app/.github/workflows/ci.yaml"
 -'  93  28  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,93,28,1730865177,"~/go-web-app/.github/workflows/ci.yaml"
 -'  11  9  ~/helm/go-web-app-chart/values.yaml
 |4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
 -'  11  9  ~/helm/go-web-app-chart/values.yaml
 |4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
+-'  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
+-'  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
+-'  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
+-'  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
+-'  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
+-'  11  9  ~/helm/go-web-app-chart/values.yaml
+|4,39,11,9,1730864753,"~/helm/go-web-app-chart/values.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  28  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
 -'  93  28  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,93,28,1730864290,"~/go-web-app/.github/workflows/ci.yaml"
 -'  93  28  ~/go-web-app/.github/workflows/ci.yaml
@@ -492,10 +330,52 @@
 |4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
 -'  108  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  109  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,109,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  109  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,109,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  109  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,109,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730864275,"~/go-web-app/.github/workflows/ci.yaml"
 -'  108  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
 -'  108  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+-'  108  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,108,0,1730863602,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  29  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,29,1730863510,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  29  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,29,1730863510,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  29  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,29,1730863510,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  29  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,29,1730863510,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  29  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,29,1730863510,"~/go-web-app/.github/workflows/ci.yaml"
+-'  93  29  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,93,29,1730863510,"~/go-web-app/.github/workflows/ci.yaml"
 -'  93  29  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,93,29,1730863510,"~/go-web-app/.github/workflows/ci.yaml"
 -'  93  29  ~/go-web-app/.github/workflows/ci.yaml
@@ -510,6 +390,36 @@
 |4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
 -'  67  0  ~/go-web-app/.github/workflows/ci.yaml
 |4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
+-'  67  0  ~/go-web-app/.github/workflows/ci.yaml
+|4,39,67,0,1730863493,"~/go-web-app/.github/workflows/ci.yaml"
 -'  8  12  ~/Dockerfile
 |4,39,8,12,1730832632,"~/Dockerfile"
 -'  8  12  ~/Dockerfile
@@ -542,140 +452,35 @@
 |4,39,8,12,1730832632,"~/Dockerfile"
 -'  8  12  ~/Dockerfile
 |4,39,8,12,1730832632,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832565,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  34  0  ~/Dockerfile
-|4,39,34,0,1730832344,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  1  24  ~/Dockerfile
-|4,39,1,24,1730832211,"~/Dockerfile"
--'  32  24  ~/Dockerfile
-|4,39,32,24,1730831565,"~/Dockerfile"
--'  32  24  ~/Dockerfile
-|4,39,32,24,1730831565,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
+-'  8  12  ~/Dockerfile
+|4,39,8,12,1730832632,"~/Dockerfile"
 
 # History of marks within files (newest to oldest):
+
+> ~/go-web-app/go.mod
+	*	1730875997	0
+	"	3	0
+	.	4	0
+	+	1	0
+	+	4	0
 
 > ~/go-web-app/.github/workflows/ci.yaml
 	*	1730865192	0
