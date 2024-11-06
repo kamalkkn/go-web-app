@@ -90,7 +90,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB.TOKEN }}
+          token: ${{ secrets.TOKEN }}
 
       # Update the Docker image tag in the Helm chart's values.yaml file
       - name: Update tag in Helm chart
